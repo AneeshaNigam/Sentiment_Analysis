@@ -20,7 +20,7 @@ A simple sentiment analysis web application built using a machine learning model
 
 ---
 
-🚀 How to Run
+🚀 How to Run Locally
 
 1. **Clone the repo:**
 
