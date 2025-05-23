@@ -1,70 +1,78 @@
-🎯 Sentiment Analysis App
+# 🎯 Sentiment Analysis App
 
 A simple sentiment analysis web application built using a machine learning model trained on IMDB movie reviews. The app classifies input text as **positive** or **negative** sentiment.
 
----
-
-📦 Features
-
-- Pretrained logistic regression model using `TF-IDF` vectorizer
-- Trained on the **IMDB Dataset of 50K reviews**
-- User-friendly frontend via **Streamlit**
-- Local execution without internet required
-- Clean and modular code
+🌐 **Live Demo:** [Try the App](https://sentimentanalysis-mlmxzmbunmavqboifkbfyl.streamlit.app)
 
 ---
 
-🧪 Demo
+## 📦 Features
 
-![alt text](image.png)
+- ✅ Pretrained Logistic Regression model using TF-IDF vectorizer  
+- 🎬 Trained on the IMDB Dataset of 50,000 reviews  
+- ⚡ User-friendly frontend via Streamlit  
+- 📦 Local execution without internet required  
+- 🧼 Clean and modular code structure  
 
 ---
 
-🚀 How to Run Locally
+## 🚀 How to Run Locally
 
-1. **Clone the repo:**
+**1. Clone the repository**
+```bash
+git clone https://github.com/AneeshaNigam/Sentiment_Analysis.git
+cd Sentiment_Analysis
+```
+**2. Create and activate a virtual environment**
 
 ```bash
-git clone https://github.com/yourusername/sentiment-analysis-app.git
-cd sentiment-analysis-app
-
-Create and activate a virtual environment:
 python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate on Windows
+# Activate it
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
 
-Install dependencies:
+```
+**3. Install dependencies**
+
+```bash
 pip install -r requirements.txt
+```
+**4. Run the app**
 
-Run the app locally:
+```bash
 streamlit run app.py
-
+```
 📁 Project Structure
+```bash
 .
 ├── app.py                # Streamlit web app
-├── model.py              # Code used to train and export the model
+├── model.py              # Model loading and preprocessing code
 ├── sentiment_model.pkl   # Trained ML model
-├── vectorizer.pkl        # Fitted TF-IDF vectorizer
-├── requirements.txt      # Python dependencies
+├── vectorizer.pkl        # TF-IDF vectorizer
+├── requirements.txt      # Dependencies
 ├── .gitignore
 ├── LICENSE
 └── README.md
-
 ✅ Note: Dataset (IMDB Dataset.csv) and model training code are excluded from deployment for size and reproducibility reasons.
+```
 
 🧠 Model Training
 Preprocessing: Lowercasing, removing HTML tags, punctuation, and stopwords
 
 Vectorization: TF-IDF using sklearn
 
-Model: Logistic Regression
+Model: Logistic Regression using scikit-learn
 
-Training was done in Google Colab and the model was exported as .pkl files
+Training Environment: Google Colab
+
+Exported Models: sentiment_model.pkl, vectorizer.pkl
 
 📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License.
 
 ✨ Author
 Aneesha Nigam
-B.Tech CSE Student | Passionate about AI & Deployment
-🔗 LinkedIn : https://www.linkedin.com/in/aneesha-nigam/
-
+🎓 B.Tech CSE Student | 💡 Passionate about AI & Deployment
+🔗 LinkedIn Profile: https://www.linkedin.com/in/aneesha-nigam/
