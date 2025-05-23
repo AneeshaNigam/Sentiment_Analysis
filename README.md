@@ -2,7 +2,7 @@
 
 A simple sentiment analysis web application built using a machine learning model trained on IMDB movie reviews. The app classifies input text as **positive** or **negative** sentiment.
 
-🌐 **Live Demo:** [Try the App](https://sentimentanalysis-mlmxzmbunmavqboifkbfyl.streamlit.app)
+🌐 **Live Demo:** [Try the App](https://sentimentanalysis-1.streamlit.app)
 
 ---
 
